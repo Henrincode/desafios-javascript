@@ -1,0 +1,40 @@
+<script>
+    // Limpa o console
+    clear();
+
+    // Criação das variáveis
+    var data = new Date();
+    var diaDaSemana = data.getDay();
+    var diaDaSemanaExtenso;
+
+    // Verifica o dia da semana e escreve por extenso
+    switch (diaDaSemana) {
+        case 0:
+            diaDaSemanaExtenso = "domingo";
+            break;
+        case 1:
+            diaDaSemanaExtenso = "segunda-feira";
+            break;
+        case 2:
+            diaDaSemanaExtenso = "terça-feira";
+            break;
+        case 3:
+            diaDaSemanaExtenso = "quarta-feira";
+            break;
+        case 4:
+            diaDaSemanaExtenso = "quinta-feira";
+            break;
+        case 5:
+            diaDaSemanaExtenso = "sexta-feira";
+            break;
+        case 6:
+            diaDaSemanaExtenso = "sábado";
+            break;
+        default:
+            diaDaSemanaExtenso = "dia inválido";
+            break;
+    }
+
+    // Exibe a mensagem para o usuário
+    console.log("Hoje é " + diaDaSemanaExtenso + ".");
+</script>

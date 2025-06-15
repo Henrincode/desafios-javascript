@@ -1,0 +1,20 @@
+<script>
+    // Limpa o console
+    clear();
+
+    // Declaração de variáveis
+    var vendedor, jan, fev, mar, media;
+
+    // Coleta de dados via prompt
+    vendedor = prompt("Informe o nome do vendedor", "Digite aqui");
+    jan = prompt("Informe o valor das vendas de janeiro", "Digite aqui");
+    fev = prompt("Informe o valor das vendas de fevereiro", "Digite aqui");
+    mar = prompt("Informe o valor das vendas de março", "Digite aqui");
+
+    // Cálculo da média de vendas do 1º trimestre
+    media = (parseFloat(jan) + parseFloat(fev) + parseFloat(mar)) / 3;
+
+    // Exibição das informações
+    console.log("A média de vendas do " + vendedor + " no 1º trim foi " + media);
+    alert("A média de vendas do " + vendedor + " no 1º trim foi " + media);
+</script>

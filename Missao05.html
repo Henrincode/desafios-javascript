@@ -1,0 +1,21 @@
+<script>
+    // Limpa o console
+    clear();
+
+    // Cria uma variável com a data atual e outra com a hora atual
+    var dataCompleta;
+    var horaAtual;
+
+    // Instancia o objeto Date e obtém a hora atual
+    dataCompleta = new Date();
+    horaAtual = dataCompleta.getHours();
+
+    // Exibe uma saudação de acordo com o horário
+    if (horaAtual < 12) {
+        alert("Bom dia");
+    } else if (horaAtual < 18) {
+        alert("Boa tarde");
+    } else {
+        alert("Boa noite");
+    }
+</script>
